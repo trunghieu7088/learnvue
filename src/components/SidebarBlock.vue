@@ -49,6 +49,14 @@
                 </RouterLink>
            </li>
 
+           <li :class="{ 'nav-item': true, 'active': $route.path === '/fetchapi' }">
+                 <RouterLink to="/fetchapi" class="nav-link" >
+                    <i class="far fa-credit-card"></i>
+                    <span>Fetch API</span>
+                
+                </RouterLink>
+           </li>
+
 
            <!-- Divider -->
            <hr class="sidebar-divider">

@@ -19,6 +19,10 @@ export default
         updateProp()
         {
             this.searchtext='hello cuoc doi';
+        },
+        redirectcustom()
+        {
+            this.$router.push('/book');
         }
     },
     mounted()
@@ -34,4 +38,5 @@ export default
     <input v-model="searchtext" type="text">
     <button @click="updateProp" class="btn btn-danger">Update Text</button>
     <p>{{ searchtext }}</p>
+    <button @click="redirectcustom" class="btn btn-info">Redirect</button>
 </template>
