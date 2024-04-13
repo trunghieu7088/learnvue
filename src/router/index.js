@@ -5,6 +5,9 @@ import DashboardView from '../views/DashboardView.vue'
 import BookView from '../views/BookView.vue'
 import GetParamView from '../views/GetParamView.vue'
 import FetchApiView from '../views/FetchApiView.vue'
+import Vue3View from '../views/Vue3View.vue'
+import UsePiniaView from '../views/UsePiniaView.vue'
+import UsePinia2View from '../views/UsePinia2View.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -58,6 +61,36 @@ const router = createRouter({
       params: true,
       meta:{
           title: "Fetch API",
+      },
+    },
+
+    {
+      path: '/vue3',
+      name: 'vue3',
+      component: Vue3View,
+      params: true,
+      meta:{
+          title: "Vue 3",
+      },
+    },
+
+    {
+      path: '/usepinia',
+      name: 'usepinia',
+      component: UsePiniaView,
+      params: true,
+      meta:{
+          title: "Using pinia",
+      },
+    },
+
+    {
+      path: '/usepinia2',
+      name: 'usepinia2',
+      component: UsePinia2View,
+      params: true,
+      meta:{
+          title: "Using pinia 2",
       },
     },
     

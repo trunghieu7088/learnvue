@@ -57,6 +57,29 @@
                 </RouterLink>
            </li>
 
+           <li activeClass="active" :class="{ 'nav-item': true }">
+                 <RouterLink to="/vue3" class="nav-link" >
+                    <i class="fas fa-wine-glass"></i>
+                    <span>Vue JS 3</span>
+                
+                </RouterLink>
+           </li>
+
+           <li activeClass="active" :class="{ 'nav-item': true }">
+                 <RouterLink to="/usepinia" class="nav-link" >
+                    <i class="fas fa-wine-glass"></i>
+                    <span>Using Pinia 1</span>
+                
+                </RouterLink>
+           </li>
+
+           <li activeClass="active" :class="{ 'nav-item': true }">
+                 <RouterLink to="/usepinia2" class="nav-link" >
+                    <i class="fas fa-wine-glass"></i>
+                    <span>Using Pinia 2</span>
+                
+                </RouterLink>
+           </li>
 
            <!-- Divider -->
            <hr class="sidebar-divider">
