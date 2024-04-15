@@ -8,6 +8,12 @@ import FetchApiView from '../views/FetchApiView.vue'
 import Vue3View from '../views/Vue3View.vue'
 import UsePiniaView from '../views/UsePiniaView.vue'
 import UsePinia2View from '../views/UsePinia2View.vue'
+import UpView from '../views/UpView.vue'
+
+
+import CVue2 from '../views/CVue2.vue'
+import CVue3 from '../views/CVue3.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -93,7 +99,37 @@ const router = createRouter({
           title: "Using pinia 2",
       },
     },
+
+    {
+      path: '/upvue',
+      name: 'upvue',
+      component: UpView,
+      params: true,
+      meta:{
+          title: "Vue Component",
+      },
+    },
     
+    
+    {
+      path: '/cvue2',
+      name: 'cvue2',
+      component: CVue2,
+      params: true,
+      meta:{
+          title: "Code Vue 2",
+      },
+    },
+
+    {
+      path: '/cvue3',
+      name: 'cvue3',
+      component: CVue3,
+      params: true,
+      meta:{
+          title: "Code Vue 3",
+      },
+    },
     
   ]
 })

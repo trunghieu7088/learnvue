@@ -81,6 +81,30 @@
                 </RouterLink>
            </li>
 
+           <li :class="{ 'nav-item': true }">
+                 <RouterLink activeClass="active" to="/upvue" class="nav-link" >
+                    <i class="fas fa-wine-glass"></i>
+                    <span>Vue Component</span>
+                
+                </RouterLink>
+           </li>
+
+           <li :class="{ 'nav-item': true }">
+                 <RouterLink activeClass="active" to="/cvue2" class="nav-link" >
+                    <i class="fas fa-wine-glass"></i>
+                    <span>Code Vue 2</span>
+                
+                </RouterLink>
+           </li>
+
+           <li :class="{ 'nav-item': true }">
+                 <RouterLink activeClass="active" to="/cvue3" class="nav-link" >
+                    <i class="fas fa-wine-glass"></i>
+                    <span>Code Vue 3</span>
+                
+                </RouterLink>
+           </li>
+
            <!-- Divider -->
            <hr class="sidebar-divider">
 
